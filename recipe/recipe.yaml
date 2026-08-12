@@ -40,7 +40,9 @@ tests:
         - openff.units.openmm
         - openff.units.elements
       pip_check: false
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - files:
       recipe:
         - test_units.py
